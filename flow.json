@@ -1,0 +1,32 @@
+{
+	"contracts": {
+		"OstroToken": "cadence/contracts/OstroToken.cdc",
+		"PropertyContract": "cadence/contracts/PropertyContract.cdc",
+		"MarketplaceContract":"cadence/contracts/MarketplaceContract.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "46b8c0266721a81512da8c75e5257d06dc9ef1c8f8124ac43c143e486511cb02"
+		},
+		"third-account": {
+			"address": "045a1763c93006ca",
+			"key": "d7e8b21e7b198117a222d2d95583bf9179e2e801fcfcc92fa565ac478894dc48"
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"PropertyContract",
+				"OstroToken",
+				"MarketplaceContract"
+			]
+		}
+	}
+}
